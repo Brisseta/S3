@@ -1,5 +1,7 @@
 package Tp1.src;
 
+import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
 
@@ -21,7 +23,21 @@ public class Main {
 		s.insertSort(tab,c);
 		System.out.println(c.toString());
 		s.printtabay(tab);
-
+		// tri d'un tableau d'objet:
+		Friend[] tableau = new Friend[10];
+		char tmp='a';
+		Random rd=new Random();
+		for (int i = 0; i < tab.length-1; i++) {
+			tmp++;
+			tableau[i]=new Friend(rd.nextInt(100),"t"+tmp+"t"+tmp);
+			System.out.print(tableau[i]+",");
+			
+		}
+		System.out.println();
+		Arrays.sort(tableau);
+		for (int i = 0; i < tableau.length; i++) {
+			System.err.print(tableau[i]+",");
+		}
 	}
 
 }
