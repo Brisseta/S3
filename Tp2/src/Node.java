@@ -1,7 +1,7 @@
 
 public class Node <E> {
 
-	Object value;
+	E value;
 	Node<E> next;
 
 	
@@ -13,7 +13,9 @@ public class Node <E> {
 
 	@Override
 	public String toString() {
-		return " {value=" + value + "}";
+		return ""+value;
 	}
+
+
 	
 }
